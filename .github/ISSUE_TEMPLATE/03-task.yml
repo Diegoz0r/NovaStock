@@ -1,0 +1,46 @@
+
+name: Technical Task
+description: Registrar una actividad técnica o de mantenimiento.
+title: "[TASK] "
+labels:
+  - "type: task"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Registra la actividad, su propósito y el resultado esperado.
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objetivo
+      description: ¿Qué queremos conseguir?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexto
+      description: ¿Por qué necesitamos realizar esta actividad?
+    validations:
+      required: true
+
+  - type: textarea
+    id: activities
+    attributes:
+      label: Actividades técnicas
+      description: Enumera las acciones necesarias.
+      placeholder: |
+        - [ ] Actividad 1
+        - [ ] Actividad 2
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Criterios de aceptación
+      description: ¿Cómo verificaremos que el trabajo está terminado?
+    validations:
+      required: true
